@@ -1,13 +1,16 @@
-Metadata-Version: 2.1
-Name: safeguard-detection
+Metadata-Version: 2.4
+Name: safeguard_detection
 Version: 0.0.0
 Summary: TODO: Package description
-Home-page: UNKNOWN
 Maintainer: zinzi
 Maintainer-email: zinzi@todo.todo
 License: TODO: License declaration
-Platform: UNKNOWN
+Requires-Dist: setuptools
 Provides-Extra: test
-
-UNKNOWN
-
+Requires-Dist: pytest; extra == "test"
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary

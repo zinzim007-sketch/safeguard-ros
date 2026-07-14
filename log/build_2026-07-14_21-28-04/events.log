@@ -1,0 +1,55 @@
+[0.000000] (-) TimerEvent: {}
+[0.007321] (safeguard_detection) JobQueued: {'identifier': 'safeguard_detection', 'dependencies': OrderedDict()}
+[0.007882] (safeguard_detection) JobStarted: {'identifier': 'safeguard_detection'}
+[0.098562] (-) TimerEvent: {}
+[0.199718] (-) TimerEvent: {}
+[0.300702] (-) TimerEvent: {}
+[0.401623] (-) TimerEvent: {}
+[0.502545] (-) TimerEvent: {}
+[0.604214] (-) TimerEvent: {}
+[0.706234] (-) TimerEvent: {}
+[0.806783] (-) TimerEvent: {}
+[0.907232] (-) TimerEvent: {}
+[1.007636] (-) TimerEvent: {}
+[1.107924] (-) TimerEvent: {}
+[1.208370] (-) TimerEvent: {}
+[1.308735] (-) TimerEvent: {}
+[1.409247] (-) TimerEvent: {}
+[1.415753] (safeguard_detection) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/safeguard_detection', 'build', '--build-base', '/home/zinzi/safeguard_ws/build/safeguard_detection/build', 'install', '--record', '/home/zinzi/safeguard_ws/build/safeguard_detection/install.log', '--install-scripts', '$base/lib/safeguard_detection', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zinzi/safeguard_ws/src/safeguard_detection', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'zinzi', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{deeca157-d7ce-5f98-888e-4f457b5e51ea}', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/zinzi', 'OLDPWD': '/home/zinzi', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'zinzi', 'NAME': 'Zinzis-Asus', 'WSL_INTEROP': '/run/WSL/34228_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/zinzi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2025a/bin:/mnt/c/LINGO64_19/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/zinzi/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/zinzi/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/zinzi/dev/flutter/bin:/mnt/c/Users/zinzi/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/zinzi/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/zinzi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zinzi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/zinzi/AppData/Local/Programs/Ollama:/mnt/c/Users/zinzi/AppData/Roaming/npm:/snap/bin:/opt/xtensa-esp-elf/bin/', 'WT_SESSION': 'e816148b-78d4-473e-b1ac-6803c9030e70', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/zinzi/safeguard_ws/build/safeguard_detection', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zinzi/safeguard_ws/build/safeguard_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:'}, 'shell': False}
+[1.509379] (-) TimerEvent: {}
+[1.609795] (-) TimerEvent: {}
+[1.710368] (-) TimerEvent: {}
+[1.811100] (-) TimerEvent: {}
+[1.843041] (safeguard_detection) StdoutLine: {'line': b'running egg_info\n'}
+[1.866490] (safeguard_detection) StdoutLine: {'line': b'writing ../../build/safeguard_detection/safeguard_detection.egg-info/PKG-INFO\n'}
+[1.873968] (safeguard_detection) StdoutLine: {'line': b'writing dependency_links to ../../build/safeguard_detection/safeguard_detection.egg-info/dependency_links.txt\n'}
+[1.874810] (safeguard_detection) StdoutLine: {'line': b'writing entry points to ../../build/safeguard_detection/safeguard_detection.egg-info/entry_points.txt\n'}
+[1.875916] (safeguard_detection) StdoutLine: {'line': b'writing requirements to ../../build/safeguard_detection/safeguard_detection.egg-info/requires.txt\n'}
+[1.876212] (safeguard_detection) StdoutLine: {'line': b'writing top-level names to ../../build/safeguard_detection/safeguard_detection.egg-info/top_level.txt\n'}
+[1.911216] (-) TimerEvent: {}
+[1.926262] (safeguard_detection) StdoutLine: {'line': b"reading manifest file '../../build/safeguard_detection/safeguard_detection.egg-info/SOURCES.txt'\n"}
+[1.935585] (safeguard_detection) StdoutLine: {'line': b"writing manifest file '../../build/safeguard_detection/safeguard_detection.egg-info/SOURCES.txt'\n"}
+[1.936923] (safeguard_detection) StdoutLine: {'line': b'running build\n'}
+[1.937340] (safeguard_detection) StdoutLine: {'line': b'running build_py\n'}
+[1.938066] (safeguard_detection) StdoutLine: {'line': b'copying safeguard_detection/mission_planner.py -> /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection\n'}
+[1.938342] (safeguard_detection) StdoutLine: {'line': b'copying safeguard_detection/__init__.py -> /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection\n'}
+[1.938604] (safeguard_detection) StdoutLine: {'line': b'copying safeguard_detection/detection_publisher.py -> /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection\n'}
+[1.939796] (safeguard_detection) StdoutLine: {'line': b'running install\n'}
+[1.944133] (safeguard_detection) StdoutLine: {'line': b'running install_lib\n'}
+[1.967544] (safeguard_detection) StdoutLine: {'line': b'copying /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection/mission_planner.py -> /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection\n'}
+[1.969559] (safeguard_detection) StdoutLine: {'line': b'byte-compiling /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/mission_planner.py to mission_planner.cpython-310.pyc\n'}
+[1.971507] (safeguard_detection) StdoutLine: {'line': b'running install_data\n'}
+[1.972116] (safeguard_detection) StdoutLine: {'line': b'copying resource/safeguard_detection -> /home/zinzi/safeguard_ws/install/safeguard_detection/share/ament_index/resource_index/packages\n'}
+[1.973615] (safeguard_detection) StdoutLine: {'line': b'copying package.xml -> /home/zinzi/safeguard_ws/install/safeguard_detection/share/safeguard_detection\n'}
+[1.974259] (safeguard_detection) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.992165] (safeguard_detection) StdoutLine: {'line': b"removing '/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.003528] (safeguard_detection) StdoutLine: {'line': b'Copying ../../build/safeguard_detection/safeguard_detection.egg-info to /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info\n'}
+[2.007074] (safeguard_detection) StdoutLine: {'line': b'running install_scripts\n'}
+[2.011341] (-) TimerEvent: {}
+[2.053048] (safeguard_detection) StdoutLine: {'line': b'Installing detection_publisher script to /home/zinzi/safeguard_ws/install/safeguard_detection/lib/safeguard_detection\n'}
+[2.055732] (safeguard_detection) StdoutLine: {'line': b'Installing mission_planner script to /home/zinzi/safeguard_ws/install/safeguard_detection/lib/safeguard_detection\n'}
+[2.057561] (safeguard_detection) StdoutLine: {'line': b"writing list of installed files to '/home/zinzi/safeguard_ws/build/safeguard_detection/install.log'\n"}
+[2.107209] (safeguard_detection) CommandEnded: {'returncode': 0}
+[2.111531] (-) TimerEvent: {}
+[2.142324] (safeguard_detection) JobEnded: {'identifier': 'safeguard_detection', 'rc': 0}
+[2.147164] (-) EventReactorShutdown: {}

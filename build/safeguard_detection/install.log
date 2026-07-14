@@ -1,5 +1,7 @@
+/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/mission_planner.py
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/__init__.py
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/detection_publisher.py
+/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/__pycache__/mission_planner.cpython-310.pyc
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/__pycache__/__init__.cpython-310.pyc
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/__pycache__/detection_publisher.cpython-310.pyc
 /home/zinzi/safeguard_ws/install/safeguard_detection/share/ament_index/resource_index/packages/safeguard_detection
@@ -12,3 +14,4 @@
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info/requires.txt
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info/entry_points.txt
 /home/zinzi/safeguard_ws/install/safeguard_detection/lib/safeguard_detection/detection_publisher
+/home/zinzi/safeguard_ws/install/safeguard_detection/lib/safeguard_detection/mission_planner
