@@ -1,0 +1,3 @@
+[console_scripts]
+detection_publisher = safeguard_detection.detection_publisher:main
+

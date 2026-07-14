@@ -1,0 +1,23 @@
+[0.516s] Invoking command in '/home/zinzi/safeguard_ws/src/safeguard_detection': PYTHONPATH=/home/zinzi/safeguard_ws/build/safeguard_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/safeguard_detection build --build-base /home/zinzi/safeguard_ws/build/safeguard_detection/build install --record /home/zinzi/safeguard_ws/build/safeguard_detection/install.log --install-scripts $base/lib/safeguard_detection --single-version-externally-managed install_data
+[0.699s] running egg_info
+[0.699s] writing ../../build/safeguard_detection/safeguard_detection.egg-info/PKG-INFO
+[0.699s] writing dependency_links to ../../build/safeguard_detection/safeguard_detection.egg-info/dependency_links.txt
+[0.700s] writing entry points to ../../build/safeguard_detection/safeguard_detection.egg-info/entry_points.txt
+[0.700s] writing requirements to ../../build/safeguard_detection/safeguard_detection.egg-info/requires.txt
+[0.700s] writing top-level names to ../../build/safeguard_detection/safeguard_detection.egg-info/top_level.txt
+[0.701s] reading manifest file '../../build/safeguard_detection/safeguard_detection.egg-info/SOURCES.txt'
+[0.702s] writing manifest file '../../build/safeguard_detection/safeguard_detection.egg-info/SOURCES.txt'
+[0.702s] running build
+[0.703s] running build_py
+[0.703s] copying safeguard_detection/detection_publisher.py -> /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection
+[0.704s] running install
+[0.705s] running install_lib
+[0.708s] copying /home/zinzi/safeguard_ws/build/safeguard_detection/build/lib/safeguard_detection/detection_publisher.py -> /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection
+[0.708s] byte-compiling /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection/detection_publisher.py to detection_publisher.cpython-310.pyc
+[0.709s] running install_data
+[0.709s] running install_egg_info
+[0.711s] removing '/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info' (and everything under it)
+[0.711s] Copying ../../build/safeguard_detection/safeguard_detection.egg-info to /home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages/safeguard_detection-0.0.0-py3.10.egg-info
+[0.712s] running install_scripts
+[0.732s] writing list of installed files to '/home/zinzi/safeguard_ws/build/safeguard_detection/install.log'
+[0.760s] Invoked command in '/home/zinzi/safeguard_ws/src/safeguard_detection' returned '0': PYTHONPATH=/home/zinzi/safeguard_ws/build/safeguard_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zinzi/safeguard_ws/install/safeguard_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/safeguard_detection build --build-base /home/zinzi/safeguard_ws/build/safeguard_detection/build install --record /home/zinzi/safeguard_ws/build/safeguard_detection/install.log --install-scripts $base/lib/safeguard_detection --single-version-externally-managed install_data
