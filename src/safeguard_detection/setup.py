@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
     'console_scripts': [
-        'detection_publisher = safeguard_detection.detection_publisher:main','mission_planner = safeguard_detection.mission_planner:main',
+        'detection_publisher = safeguard_detection.detection_publisher:main','mission_planner = safeguard_detection.mission_planner:main','mavlink_bridge = safeguard_detection.mavlink_bridge:main',
         ],
     },
     

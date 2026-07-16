@@ -1,3 +1,4 @@
 [console_scripts]
 detection_publisher = safeguard_detection.detection_publisher:main
+mavlink_bridge = safeguard_detection.mavlink_bridge:main
 mission_planner = safeguard_detection.mission_planner:main
