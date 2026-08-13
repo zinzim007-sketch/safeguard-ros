@@ -494,43 +494,39 @@ class MissionPlanner(Node):
     # =============================================================
 
     def decide_action(self, detection):
+        label = detection['label']
+        priority = detection['priority']
 
-        label = detection.get(
-            'label',
-            'unknown'
-        )
-
-        priority = detection.get(
-            'priority',
-            'low'
-        )
+        # Loitering is a behavioural warning.
+        # Do not immediately dispatch a drone just because
+        # the detector marked it as critical.
+        if label == 'LOITERING':
+            return {
+                'action': 'raise_alert',
+                'reason': 'LOITERING',
+                'confidence': detection['confidence'],
+                'bbox': detection.get('bbox'),
+                'priority': priority,
+            }
 
         if priority == 'high':
-
             return {
                 'action': 'dispatch_drone',
                 'reason': label,
-                'confidence': detection.get(
-                    'confidence',
-                    0
-                ),
-                'bbox': detection.get(
-                    'bbox'
-                ),
+                'confidence': detection['confidence'],
+                'bbox': detection.get('bbox'),
             }
 
         elif priority == 'medium':
-
             return {
                 'action': 'raise_alert',
                 'reason': label,
-                'confidence': detection.get(
-                    'confidence',
-                    0
-                ),
+                'confidence': detection['confidence'],
             }
 
         return None
+
+
 
     # =============================================================
     # COMMAND PUBLISHING

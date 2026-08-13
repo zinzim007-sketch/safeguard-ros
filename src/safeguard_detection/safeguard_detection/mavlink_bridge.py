@@ -88,6 +88,7 @@ class MAVLinkBridge(Node):
         self.target_lat = None
         self.target_lon = None
         self.target_waypoint_index = None
+        self.target_reason = None
 
         # Distance at which a patrol waypoint is considered reached.
         # This is deliberately conservative for the software test.
@@ -285,7 +286,7 @@ class MAVLinkBridge(Node):
                     if (
                         self.target_lat is not None
                         and self.target_lon is not None
-                        and self.target_waypoint_index is not None
+                        and self.target_reason is not None
                     ):
 
                         distance = self.distance_meters(
@@ -296,33 +297,50 @@ class MAVLinkBridge(Node):
                         )
 
                         self.get_logger().debug(
-                            f'Waypoint distance: {distance:.1f} m'
+                            f'Target distance: {distance:.1f} m'
                         )
 
                         if distance <= self.waypoint_radius:
 
-                            waypoint_index = (
-                                self.target_waypoint_index
-                            )
+                            if self.target_reason == 'PATROL_WAYPOINT':
 
-                            self.get_logger().info(
-                                f'Waypoint {waypoint_index} reached '
-                                f'({distance:.1f} m from target).'
-                            )
+                                waypoint_index = self.target_waypoint_index
 
-                            self.publish_mission_event({
-                                'event': 'waypoint_reached',
-                                'waypoint_index': waypoint_index,
-                                'latitude': current_lat,
-                                'longitude': current_lon,
-                                'distance_meters': distance,
-                            })
+                                self.get_logger().info(
+                                    f'Waypoint {waypoint_index} reached '
+                                    f'({distance:.1f} m from target).'
+                                )
 
-                            # Clear target so we don't publish the same
-                            # waypoint_reached event repeatedly.
+                                self.publish_mission_event({
+                                    'event': 'waypoint_reached',
+                                    'waypoint_index': waypoint_index,
+                                    'latitude': current_lat,
+                                    'longitude': current_lon,
+                                    'distance_meters': distance,
+                                })
+
+                            elif self.target_reason == 'PANIC_BUTTON':
+
+                                self.get_logger().warning(
+                                    f'Panic location reached '
+                                    f'({distance:.1f} m from target).'
+                                )
+
+                                self.publish_mission_event({
+                                    'event': 'panic_arrived',
+                                    'latitude': current_lat,
+                                    'longitude': current_lon,
+                                    'distance_meters': distance,
+                                })
+
+                            # Clear the target so the same arrival event
+                            # cannot be published repeatedly.
                             self.target_lat = None
                             self.target_lon = None
                             self.target_waypoint_index = None
+                            self.target_reason = None
+
+                    
 
 
 
@@ -474,15 +492,28 @@ class MAVLinkBridge(Node):
 
             self.target_lat = latitude
             self.target_lon = longitude
-
             self.target_waypoint_index = command.get(
                 'waypoint_index'
             )
+            self.target_reason = 'PATROL_WAYPOINT'
 
             self.get_logger().info(
                 f'Patrol target registered: '
                 f'waypoint {self.target_waypoint_index}'
             )
+
+        elif reason == 'PANIC_BUTTON':
+
+            self.target_lat = latitude
+            self.target_lon = longitude
+            self.target_waypoint_index = None
+            self.target_reason = 'PANIC_BUTTON'
+
+            self.get_logger().warning(
+                'Panic target registered. '
+                'Waiting for GPS arrival.'
+            )
+
 
         # ---------------------------------------------------------
         # DEVELOPMENT SAFETY
