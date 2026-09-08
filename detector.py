@@ -1370,7 +1370,7 @@ class SGTDetector:
                 disconnected = set()
 
 
-                for client in self.clients:
+                for client in list(self.clients):
 
                     try:
 
